@@ -31,7 +31,7 @@
         cedilh: cedilh {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_GUI &kp COMMA &kp C>;
+            bindings = <&kp RIGHT_GUI &kp COMMA>;
             label = "CEDILH";
         };
 
@@ -40,6 +40,27 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT_GUI &kp TILDE>;
             label = "TILDE";
+        };
+
+        agudo: agudo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RGUI &kp APOS>;
+            label = "AGUDO";
+        };
+
+        crase: crase {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RGUI &kp GRAVE>;
+            label = "CRASE";
+        };
+
+        circunflexo: circunflexo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RGUI &kp RS(NUMBER_6)>;
+            label = "CIRCUNFLEXO";
         };
     };
 
@@ -102,10 +123,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans           &trans    &trans    &trans     &trans  &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PRINTSCREEN  &trans    &trans    &trans     &trans  &trans
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PAGE_UP      &kp HOME  &kp UP    &kp END    &trans  &trans
-&trans      &trans        &trans        &cedilh       &trans        &trans        &trans    &trans  &kp PAGE_DOWN    &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans           &trans    &trans    &trans     &trans        &trans
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PRINTSCREEN  &trans    &trans    &trans     &crase        &agudo
+&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PAGE_UP      &kp HOME  &kp UP    &kp END    &cedilh       &tilde
+&trans      &trans        &trans        &cedilh       &trans        &trans        &trans    &trans  &kp PAGE_DOWN    &kp LEFT  &kp DOWN  &kp RIGHT  &circunflexo  &trans
                           &trans        &trans        &trans        &trans        &trans    &trans  &trans           &trans    &tilde    &trans
             >;
 
