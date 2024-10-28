@@ -123,11 +123,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4                          &trans         &trans    &trans    &trans     &trans        &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &kp PRINTSCREEN  &trans                                &kp PAGE_UP    &kp HOME  &kp UP    &kp END    &crase        &agudo
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans           &trans                                &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &cedilh       &tilde
-&trans      &trans        &trans        &cedilh       &trans           &trans        &trans          &trans  &none          &none     &none     &none      &circunflexo  &kp EQUAL
-                          &trans        &trans        &trans           &trans        &kp CAPSLOCK    &trans  &trans         &trans    &tilde    &trans
+&trans        &trans    &trans     &trans       &trans           &trans                          &trans         &trans    &trans    &trans     &trans        &trans
+&trans        &kp INS   &kp PSCRN  &kp K_CMENU  &kp PRINTSCREEN  &trans                          &kp PAGE_UP    &kp HOME  &kp UP    &kp END    &crase        &agudo
+&kp CAPSLOCK  &kp LALT  &kp LCTRL  &kp LSHFT    &trans           &trans                          &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &cedilh       &tilde
+&trans        &trans    &trans     &cedilh      &trans           &trans  &trans          &trans  &none          &none     &none     &none      &circunflexo  &kp EQUAL
+                        &trans     &trans       &trans           &trans  &kp CAPSLOCK    &trans  &trans         &trans    &tilde    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
