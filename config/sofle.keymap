@@ -124,8 +124,8 @@
 
             bindings = <
 &trans        &trans    &trans     &trans       &trans           &trans                          &trans         &trans    &trans    &trans     &trans        &trans
-&trans        &kp INS   &kp PSCRN  &kp K_CMENU  &kp PRINTSCREEN  &trans                          &kp PAGE_UP    &kp HOME  &kp UP    &kp END    &crase        &agudo
-&kp CAPSLOCK  &kp LALT  &kp LCTRL  &kp LSHFT    &trans           &trans                          &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &cedilh       &tilde
+&kp CAPSLOCK  &kp INS   &kp PSCRN  &kp K_CMENU  &kp PRINTSCREEN  &trans                          &kp PAGE_UP    &kp HOME  &kp UP    &kp END    &crase        &agudo
+&trans        &kp LALT  &kp LCTRL  &kp LSHFT    &trans           &trans                          &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &cedilh       &tilde
 &trans        &trans    &trans     &cedilh      &trans           &trans  &trans          &trans  &none          &none     &none     &none      &circunflexo  &kp EQUAL
                         &trans     &trans       &trans           &trans  &kp CAPSLOCK    &trans  &trans         &trans    &tilde    &trans
             >;
