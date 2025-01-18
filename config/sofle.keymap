@@ -31,7 +31,7 @@
         cedilh: cedilh {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_GUI &kp COMMA &kp C>;
+            bindings = <&kp RIGHT_ALT &kp COMMA>;
             label = "CEDILH";
         };
 
